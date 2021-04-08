@@ -24,7 +24,77 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/css/materialdesignicons.css" rel="stylesheet">
     <style>
+
+body{
+    background-color: #f8f9fa!important;
+    margin-top:20px;
+}
+
+.text-custom,
+.navbar-custom .navbar-nav li a:hover,
+.navbar-custom .navbar-nav li a:active,
+.navbar-custom .navbar-nav li.active a,
+.service-box .services-icon,
+.price-features p i,
+.faq-icon,
+.social .social-icon:hover {
+    color: #f6576e !important;
+}
+
+.bg-custom,
+.btn-custom,
+.timeline-page .timeline-item .date-label-left::after,
+.timeline-page .timeline-item .duration-right::after,.back-to-top:hover {
+    background-color: #f6576e;
+}
+
+.btn-custom,
+.custom-form .form-control:focus,
+.social .social-icon:hover,
+.registration-input-box:focus {
+    border-color: #f6576e;
+}
+
+.service-box .services-icon,
+.price-features p i {
+    background-color: rgba(246, 87, 110, 0.1);
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom:focus,
+.btn-custom:hover,
+.open > .dropdown-toggle.btn-custom {
+    border-color: #e45267;
+    background-color: #e45267;
+}
+
+
+.price-box {
+    padding: 40px 50px;
+}
+
+.plan-price h1 span {
+    font-size: 16px;
+    color: #000;
+}
+
+.price-features p i {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
 /*=============================================================
     Authour URL: www.designbootstrap.com
     
@@ -181,7 +251,7 @@ PRICING STYLES
   padding: 20px;
   margin: 0px;
 }
-</style>
+    </style>
       
     
   </head>
@@ -248,83 +318,70 @@ PRICING STYLES
     </div>  
     
     <section class="site-section border-bottom bg-light" id="faq-section">
-      <!------ Include the above in your HEAD tag ---------->
-          
-          <!-- Plans -->
-          <section id="plans">
-              <div class="container">
-                  <div class="row">
-      
-                      <!-- item -->
-                      <div class="col-md-4 text-center">
-                          <div class="panel panel-danger panel-pricing">
-                              <div class="panel-heading">
-                                  <i class="fa fa-desktop"></i>
-                                  <h3>Plan 1</h3>
-                              </div>
-                              <div class="panel-body text-center">
-                                  <p><strong>$100 / Month</strong></p>
-                              </div>
-                              <ul class="list-group text-center">
-                                  <li class="list-group-item"><i class="fa fa-check"></i> Personal use</li>
-                                  <li class="list-group-item"><i class="fa fa-check"></i> Unlimited projects</li>
-                                  <li class="list-group-item"><i class="fa fa-check"></i> 27/7 support</li>
-                              </ul>
-                              <div class="panel-footer">
-                                  <a class="btn btn-lg btn-block btn-danger" href="#">BUY NOW!</a>
-                              </div>
-                          </div>
-                      </div>
-                      <!-- /item -->
-      
-                      <!-- item -->
-                      <div class="col-md-4 text-center">
-                          <div class="panel panel-warning panel-pricing">
-                              <div class="panel-heading">
-                                  <i class="fa fa-desktop"></i>
-                                  <h3>Plan 2</h3>
-                              </div>
-                              <div class="panel-body text-center">
-                                  <p><strong>$200 / Month</strong></p>
-                              </div>
-                              <ul class="list-group text-center">
-                                  <li class="list-group-item"><i class="fa fa-check"></i> Personal use</li>
-                                  <li class="list-group-item"><i class="fa fa-check"></i> Unlimited projects</li>
-                                  <li class="list-group-item"><i class="fa fa-check"></i> 27/7 support</li>
-                              </ul>
-                              <div class="panel-footer">
-                                  <a class="btn btn-lg btn-block btn-warning" href="#">BUY NOW!</a>
-                              </div>
-                          </div>
-                      </div>
-                      <!-- /item -->
-      
-                      <!-- item -->
-                      <div class="col-md-4 text-center">
-                          <div class="panel panel-success panel-pricing">
-                              <div class="panel-heading">
-                                  <i class="fa fa-desktop"></i>
-                                  <h3>Plan 3</h3>
-                              </div>
-                              <div class="panel-body text-center">
-                                  <p><strong>$300 / Month</strong></p>
-                              </div>
-                              <ul class="list-group text-center">
-                                  <li class="list-group-item"><i class="fa fa-check"></i> Personal use</li>
-                                  <li class="list-group-item"><i class="fa fa-check"></i> Unlimited projects</li>
-                                  <li class="list-group-item"><i class="fa fa-check"></i> 27/7 support</li>
-                              </ul>
-                              <div class="panel-footer">
-                                  <a class="btn btn-lg btn-block btn-success" href="#">BUY NOW!</a>
-                              </div>
-                          </div>
-                      </div>
-                      <!-- /item -->
-      
-                  </div>
+      <div class="container">                
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="bg-white mt-3 price-box">
+              <div class="pricing-name text-center">
+                <h4 class="mb-0">Personal</h4>
               </div>
-          </section>
-          <!-- /Plans -->     
+              <div class="plan-price text-center mt-4">
+                <h1 class="text-custom font-weight-normal mb-0">$9<span>/Month</span></h1>
+              </div>
+              <div class="price-features mt-5">
+                <p><i class="mdi mdi-check"></i> Bandwidth: <span class="font-weight-bold">1GB</span></p>
+                <p><i class="mdi mdi-check"></i> Onlinespace: <span class="font-weight-bold">1GB</span></p>
+                <p><i class="mdi mdi-close"></i> Support: <span class="font-weight-bold">No</span></p>
+                <p><i class="mdi mdi-check"></i> Domain: <span class="font-weight-bold">1</span></p>
+                <p><i class="mdi mdi-check"></i> Hidden Fees: <span class="font-weight-bold">No</span></p>
+              </div>
+              <div class="text-center mt-5">
+                <a href="#" class="btn btn-custom text-white">Join Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="bg-white mt-3 price-box">
+              <div class="pricing-name text-center">
+                <h4 class="mb-0">Professional</h4>
+              </div>
+              <div class="plan-price text-center mt-4">
+                <h1 class="text-custom font-weight-normal mb-0">$19<span>/Month</span></h1>
+              </div>
+              <div class="price-features mt-5">
+                <p><i class="mdi mdi-check"></i> Bandwidth: <span class="font-weight-bold">2GB</span></p>
+                <p><i class="mdi mdi-check"></i> Onlinespace: <span class="font-weight-bold">5GB</span></p>
+                <p><i class="mdi mdi-check"></i> Support: <span class="font-weight-bold">Yes</span></p>
+                <p><i class="mdi mdi-check"></i> Domain: <span class="font-weight-bold">3</span></p>
+                <p><i class="mdi mdi-check"></i> Hidden Fees: <span class="font-weight-bold">No</span></p>
+              </div>
+              <div class="text-center mt-5">
+                <a href="#" class="btn btn-custom text-white">Join Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="bg-white mt-3 price-box">
+              <div class="pricing-name text-center">
+                <h4 class="mb-0">Enterprise</h4>
+              </div>
+              <div class="plan-price text-center mt-4">
+                <h1 class="text-custom font-weight-normal mb-0">$29<span>/Month</span></h1>
+              </div>
+              <div class="price-features mt-5">
+                <p><i class="mdi mdi-check"></i> Bandwidth: <span class="font-weight-bold">3GB</span></p>
+                <p><i class="mdi mdi-check"></i> Onlinespace: <span class="font-weight-bold">10GB</span></p>
+                <p><i class="mdi mdi-check"></i> Support: <span class="font-weight-bold">Yes</span></p>
+                <p><i class="mdi mdi-check"></i> Domain: <span class="font-weight-bold">Unlimited</span></p>
+                <p><i class="mdi mdi-check"></i> Hidden Fees: <span class="font-weight-bold">No</span></p>
+              </div>
+              <div class="text-center mt-5">
+                <a href="#" class="btn btn-custom text-white">Join Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
     </section>
 
   <section class="site-section">
